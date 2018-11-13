@@ -1,0 +1,20 @@
+#正式环境 
+spring:
+  application:
+    name: excel-export 
+  mvc:
+    static-path-pattern: /static/** 
+  aop:
+    proxy-target-class: true
+    auto: true
+  freemarker:
+    template-loader-path: classpath:/templates/
+    prefer-file-system-access: false
+    settings:
+      template_update_delay: 0
+      classic_compatible: true
+      number_format: 0.######
+      template_exception_handler: ignore
+    request-context-attribute: rc
+    charset: UTF-8
+   
